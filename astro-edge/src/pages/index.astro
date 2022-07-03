@@ -7,7 +7,7 @@ const renderedAt = new Date();
 <main>
   <img src="https://astro.build/assets/press/full-logo-light.svg" style="height: 48px;" alt="astro logo" />
   <h1>Theo's Crappy Benchmark (Astro On Vercel Edge)</h1>
-  <h2>Rendered at: {renderedAt}</h2>
+  <h2>Rendered at: {renderedAt.toUTCString()}</h2>
   <h2><span>Full request to render time (according to Theo): <span id="overrideme" />ms</span></h2>
   <script>
     const currentTime = new Date();
